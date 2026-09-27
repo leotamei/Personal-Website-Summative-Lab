@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Base Styles & Syntax Best Practices
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +12,7 @@ body {
     background-color: #f4f7f6;
 }
 
-/* ==========================================================================
-   Header Styling
-   ========================================================================== */
+
 header {
     background-color: #2c3e50;
     color: #ffffff;
@@ -29,7 +25,7 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between; /* Puts name on left, github on right */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -46,12 +42,10 @@ header a {
 }
 
 header a:hover {
-    color: #5dade2; /* Lighter blue on hover */
+    color: #5dade2; 
 }
 
-/* ==========================================================================
-   Layout Containers & Section Formatting
-   ========================================================================== */
+
 .section-container {
     max-width: 1000px;
     margin: 3rem auto;
@@ -67,9 +61,7 @@ header a:hover {
     padding-bottom: 0.2rem;
 }
 
-/* ==========================================================================
-   About Me Section Styling
-   ========================================================================== */
+
 #about p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
@@ -82,7 +74,7 @@ header a:hover {
 
 .skills-list {
     list-style-type: none;
-    display: flex; /* Flexbox used for skills list tags */
+    display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -95,13 +87,10 @@ header a:hover {
     font-weight: 500;
 }
 
-/* ==========================================================================
-   Projects Section (CSS GRID REQUIREMENT)
-   ========================================================================== */
-/* GRADING CRITERIA FULFILLED: Application of grid using CSS Layouts */
+
 .project-grid {
     display: grid;
-    /* This creates a responsive grid that fits as many 300px columns as possible */
+
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-top: 1.5rem;
@@ -116,7 +105,7 @@ header a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Adds a slight interactive 'lift' effect when hovering over a project */
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -147,9 +136,7 @@ header a:hover {
     background-color: #2980b9;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 footer {
     text-align: center;
     padding: 2rem;
